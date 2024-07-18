@@ -1,5 +1,5 @@
 
-console.log( 1+5 );
+console.log( 2+5);
 
 
-console.log(" test ");
+console.log(" olá ");
