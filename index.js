@@ -44,6 +44,7 @@ const App = () => {
     ],
   };
 
+  // *
   return (
     <div className="container">
       <h1 className="mt-5">Dashboard do WordPress</h1>
