@@ -19,7 +19,7 @@ const App = () => {
       }
     };
 
-    fetchData();
+    fetchData( ); 
   }, []);
 
   if (loading) return <div>Carregando dados...</div>;
