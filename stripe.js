@@ -12,7 +12,7 @@ paymentRequest.on('paymentmethod', function(ev) {
           stripe.confirmCardPayment(clientSecret).then(
             function(result) {
               if (result.error) {
-                // The payment failed   --  ask your customer for a new payment method.
+                // The payment failed    --  ask your customer for a new payment method.
               } else {
                 // The payment succeede.
               }
