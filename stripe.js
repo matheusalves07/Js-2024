@@ -14,7 +14,7 @@ paymentRequest.on('paymentmethod', function(ev) {
               if (result.error) {
                 // The payment failed    --  ask your customer for a new payment method.
               } else {
-                // Pagmento com sucesso.
+                // Pagamento com sucesso.
               }
             }
           );
