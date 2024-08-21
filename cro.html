@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Cro </title>
+    <style>
+
+        body{
+            background-color: #075032;
+        }
+
+        .container {
+             max-width: 600px;
+             margin: 0 auto;
+             padding: 20px;
+         }
+         .title {
+             font-size: 24px;
+             color: white;
+             text-align: center;
+             margin-bottom: 20px;
+         }
+         .form {
+             background: white;
+             padding: 20px;
+             border-radius: 12px;
+             margin-bottom: 50px;    
+         }
+         .label {
+             margin-top: 18px;
+             font-weight: 500;
+             color: black !important;
+             font-size: 14px;
+             color: #717070;
+         }
+         .input {
+             width: 100%;
+             margin-top: 10px;
+             padding: 10px;
+             border: 1px solid #ccc;
+         }
+         .button {
+             margin: 15px 0;
+             width: 100%;
+             background-color: #075032;
+             color: #fff;
+             padding: 10px 20px;
+             border: none;
+             cursor: pointer;
+         }
+         
+         .button:hover{
+             background: black;    
+         }
+         
+         .forgot-link {
+             text-align: center;
+             text-decoration: none;
+             color: #007BFF;
+             display: block;
+         }
+     </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="paciente" class="title"><h1>Paciente</h1></div>
+        
+           <div class="form">
+               <form action="https://idoc-croimagem.radiomemory.com.br/paciente.php" method="post" name="paciente">
+                   <div class="label">Paciente - para acessar seu exame coloque seu número e senha:</div>
+                   <input type="text" name="doc_user" class="input" placeholder="Número">
+                   <input type="password" name="senha_user" class="input" placeholder="Senha">
+                   <input type="submit" class="button" value="Entrar">
+                   <a class="forgot-link" href="https://idoc.radiomemory.com.br/login/#esqueci-minha-senha">Esqueci minha senha</a>
+               </form>
+           </div>
+       </div>
+
+       <script language="javascript">
+        // verifica se tem um get
+        var dominio = 'https://idoc-croimagem.radiomemory.com.br';
+        function PostDentista(){
+            // Verifica tipo de dados
+            document.dentista.action = 'https://idoc.radiomemory.com.br/login.php?go=clinica&retorno='+dominio; 
+            document.dentista.submit();
+        }
+        function PostPaciente(){
+    document.paciente.action = dominio + '/paciente.php';
+    document.paciente.submit(); // Correção: mudar "document.dentista" para "document.paciente"
+}
+    </script>
+    
+</body>
+</html>
