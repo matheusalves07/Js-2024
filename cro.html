@@ -9,22 +9,20 @@
 <body>
 
     <div class="container">
-        <div id="paciente" class="title"><h1>Paciente</h1></div>
-        
-           <div class="form">
-               <form action="https://idoc-croimagem.radiomemory.com.br/paciente.php" method="post" name="paciente">
-                   <div class="label">Paciente - para acessar seu exame coloque seu número e senha:</div>
-                   <input type="text" name="doc_user" class="input" placeholder="Número">
-                   <input type="password" name="senha_user" class="input" placeholder="Senha">
-                   <input type="submit" class="button" value="Entrar">
-                   <a class="forgot-link" href="https://idoc.radiomemory.com.br/login/#esqueci-minha-senha"> Esqueci minha senha </a>
-               </form>
-           </div>
-       </div>
+        <h1 class="title">Acesso ao Exame</h1> 
+        <form class="form" action="https://idoc-croimagem.radiomemory.com.br/paciente.php" method="post" name="paciente">
+            <label for="doc_user" class="label">Número:</label>
+            <input type="text" id="doc_user" name="doc_user" class="input" placeholder="Digite seu número" required>
+            <label for="senha_user" class="label">Senha:</label>
+            <input type="password" id="senha_user" name="senha_user" class="input" placeholder="Digite sua senha" required>
+            <input type="submit" class="button" value="Entrar">
+            <a class="forgot-link" href="https://idoc.radiomemory.com.br/login/#esqueci-minha-senha">Esqueci minha senha</a>
+        </form>
+    </div>
        
 
        <script language="javascript">
-        // verifica se tem um get
+        // verifica se tem um get    
         var dominio = 'https://idoc-croimagem.radiomemory.com.br';
         function PostDentista(){
             // Verifica tipo de dados
