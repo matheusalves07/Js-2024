@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dentis.css">
+    <title>Dentis</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Acesso Dentista</h1>
+        <form class="form" action="https://idoc.radiomemory.com.br/login.php?go=clinica&retorno=https://idoc-croimagem.radiomemory.com.br" method="post" name="dentista">
+            <label for="email" class="label">E-mail:</label>
+            <input type="email" id="email" name="email" class="input" placeholder="Digite seu e-mail" required>
+            <label for="senha" class="label">Senha:</label>
+            <input type="password" id="senha" name="senha" class="input" placeholder="Digite sua senha" required>
+            <input type="submit" class="button" value="Entrar">
+        </form>
+    </div>
+
+    <script language="javascript">
+        // verifica se tem um get
+        var dominio = 'https://idoc-croimagem.radiomemory.com.br';
+        function PostDentista(){
+            // Verifica tipo de dados
+            document.dentista.action = 'https://idoc.radiomemory.com.br/login.php?go=clinica&retorno='+dominio; 
+            document.dentista.submit();
+        }
+        function PostPaciente(){
+    document.paciente.action = dominio + '/paciente.php';
+    document.paciente.submit(); // Correção: mudar "document.dentista" para "document.paciente"
+}
+    </script>
+    
+</body>
+</html>
