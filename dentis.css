@@ -62,7 +62,7 @@ body {
     background-color: #043924;
 }
 
-/* Media Queries */
+/* Media Queries  */
 @media (max-width: 500px) { 
     .container {
         max-width: 90%;
