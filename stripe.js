@@ -19,7 +19,7 @@ paymentRequest.on('paymentmethod', function(ev) {
             }
           );
         } else {
-          // The payment succeeded.
+          // The payment succeeded.  
         }
       }
     });
