@@ -18,6 +18,7 @@ paymentRequest.on('paymentmethod', function(ev) {
                 // Pagamento com sucesso. 
               }
             }
+            
           );
         } else {
           // The payment succeeded.  
