@@ -3,6 +3,8 @@ paymentRequest.on('paymentmethod', function(ev) {
       '{{CLIENT_SECRET}}',
       {payment_method: ev.paymentMethod.id},
 
+      
+
       {handleActions: false}
     ).then(function(confirmResult) {
       if (confirmResult.error) {
@@ -16,6 +18,8 @@ paymentRequest.on('paymentmethod', function(ev) {
               if (result.error) {
                 // The payment failed    --  ask your customer for a new payment method.  ténica de pagmento falido //
                 //@result = @ev(Text = AnimationTimeline)// 
+                //ev
+                
               } else {
                 
                 // Pagamento com sucesso.  
